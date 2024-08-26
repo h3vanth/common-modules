@@ -8,7 +8,7 @@
         <groupId>io.formulate</groupId>
         <artifactId>common-modules</artifactId>
         <version>1.0</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <groupId>io.formulate</groupId>
