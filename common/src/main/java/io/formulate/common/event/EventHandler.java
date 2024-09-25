@@ -17,8 +17,6 @@ public class EventHandler {
     }
 
     public void emitEvents(List<Event> events) {
-        events.forEach(event -> {
-            emitEvent(event);
-        });
+        events.forEach(this::emitEvent);
     }
 }

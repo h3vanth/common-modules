@@ -12,8 +12,8 @@ import org.joda.time.DateTimeZone;
 public class Event {
     protected final String type;
 
-    protected String userId;
     protected DateTime timestamp;
+    protected String userId;
 
     public Event(String type) {
         this.type = type;

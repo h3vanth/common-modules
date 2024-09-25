@@ -12,31 +12,24 @@
     </parent>
 
     <groupId>io.formulate</groupId>
-    <artifactId>common</artifactId>
+    <artifactId>auth</artifactId>
     <packaging>jar</packaging>
 
-    <properties>
-        <spring.web.version>6.1.12</spring.web.version>
-        <mongodb.driver.version>5.1.4</mongodb.driver.version>
-        <apache.cxf.client.version>3.3.0</apache.cxf.client.version>
-    </properties>
-
     <dependencies>
-        <!-- To get bean annotations. See if we can target a specific module -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <version>${spring.web.version}</version>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+            <artifactId>spring-boot-starter-security</artifactId>
             <version>${spring.boot.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.apache.cxf</groupId>
-            <artifactId>cxf-rt-rs-client</artifactId>
-            <version>${apache.cxf.client.version}</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${spring.boot.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.formulate</groupId>
+            <artifactId>common</artifactId>
+            <version>${project.parent.version}</version>
         </dependency>
     </dependencies>
 </project>

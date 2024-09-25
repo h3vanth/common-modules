@@ -6,7 +6,7 @@
 
   <groupId>io.formulate</groupId>
   <artifactId>common-modules</artifactId>
-  <version>1.0</version>
+  <version>1.0.0</version>
   <name>common-modules</name>
   <packaging>pom</packaging>
 
@@ -18,11 +18,14 @@
     <joda.version>2.12.7</joda.version>
     <lombok.version>1.18.34</lombok.version>
     <slf4j.version>2.0.9</slf4j.version>
+    <spring.boot.version>3.3.3</spring.boot.version>
   </properties>
 
   <modules>
     <module>common</module>
-    <module>web-common</module>
+    <module>commodity</module>
+    <module>order</module>
+    <module>auth</module>
   </modules>
 
   <dependencies>
