@@ -15,7 +15,7 @@ import java.util.concurrent.Executors;
 public class EventConfig {
     @Bean
     public EventBus eventBus(List<Listener> listeners) {
-        EventBus eventBus = new AsyncEventBus(Executors.newFixedThreadPool(1));
+        EventBus eventBus = new AsyncEventBus(Executors.newSingleThreadExecutor());
         listeners.forEach(eventBus::register);
         eventBus.register(new DeadEventListener());
         return eventBus;
