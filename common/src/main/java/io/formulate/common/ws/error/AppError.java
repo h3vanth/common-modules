@@ -1,6 +1,7 @@
-package io.formulate.common.web.error;
+package io.formulate.common.ws.error;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeZone;
@@ -9,6 +10,7 @@ import java.util.List;
 
 @Getter
 @Setter
+@NoArgsConstructor
 public class AppError {
     private List<String> messages;
     private DateTime timestamp;

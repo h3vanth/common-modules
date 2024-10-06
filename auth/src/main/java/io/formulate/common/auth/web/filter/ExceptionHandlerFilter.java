@@ -2,15 +2,15 @@ package io.formulate.common.auth.web.filter;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.formulate.common.auth.web.constant.AuthConstants;
-import io.formulate.common.web.error.AppError;
+import io.formulate.common.ws.error.AppError;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.ws.rs.core.MediaType;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import javax.ws.rs.core.MediaType;
 import java.io.IOException;
 
 @RequiredArgsConstructor

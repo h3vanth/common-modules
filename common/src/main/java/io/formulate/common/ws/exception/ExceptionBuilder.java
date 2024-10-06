@@ -1,7 +1,7 @@
-package io.formulate.common.web.exception;
+package io.formulate.common.ws.exception;
 
 import com.google.common.base.Preconditions;
-import org.springframework.http.HttpStatus;
+import jakarta.ws.rs.core.Response;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -40,7 +40,7 @@ public class ExceptionBuilder {
 
     public AppException build() {
         String template = code.getTemplate();
-        HttpStatus httpStatus = code.getHttpStatus();
+        Response.Status httpStatus = code.getHttpStatus();
         ExceptionContextKey[] contextKeys = code.getContextKeys();
         if (contextKeys == null || contextKeys.length == 0) {
             return new AppException(template, httpStatus);
