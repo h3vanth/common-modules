@@ -18,6 +18,7 @@ public class CommodityEvent extends Event {
     protected String commodityId;
     protected String commodityName;
     protected String description;
+    protected String imageUrl;
     protected BigDecimal price;
 
     public CommodityEvent(String type) {
