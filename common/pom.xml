@@ -19,6 +19,7 @@
         <spring.web.version>6.1.12</spring.web.version>
         <mongodb.driver.version>5.1.4</mongodb.driver.version>
         <apache.cxf.client.version>3.3.0</apache.cxf.client.version>
+        <jakarta.version>4.0.0</jakarta.version>
     </properties>
 
     <dependencies>
@@ -37,6 +38,11 @@
             <groupId>org.apache.cxf</groupId>
             <artifactId>cxf-rt-rs-client</artifactId>
             <version>${apache.cxf.client.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.ws.rs</groupId>
+            <artifactId>jakarta.ws.rs-api</artifactId>
+            <version>${jakarta.version}</version>
         </dependency>
     </dependencies>
 </project>
