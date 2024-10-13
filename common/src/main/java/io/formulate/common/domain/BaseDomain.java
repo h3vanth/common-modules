@@ -1,14 +1,13 @@
-package io.formulate.common.model;
+package io.formulate.common.domain;
 
+import io.formulate.common.model.PropertyAware;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 import org.springframework.data.annotation.Id;
 
 @Getter
 @Setter
-@ToString
-public abstract class BaseDomain {
+public abstract class BaseDomain implements PropertyAware {
     public static final String ID = "_id";
     public static final String PROPERTY_ID = "propertyId";
     public static final String TENANT_ID = "tenantId";

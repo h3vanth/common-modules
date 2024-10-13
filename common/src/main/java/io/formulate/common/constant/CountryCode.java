@@ -1,7 +1,7 @@
 package io.formulate.common.constant;
 
 public enum CountryCode {
-    INDIA("91");
+    IND("91");
 
     private final String code;
 

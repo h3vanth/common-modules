@@ -1,6 +1,6 @@
 package io.formulate.common.commodity.model;
 
-import io.formulate.common.model.BaseDomain;
+import io.formulate.common.domain.BaseDomain;
 import lombok.Getter;
 import lombok.Setter;
 
